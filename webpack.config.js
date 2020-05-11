@@ -7,9 +7,9 @@ module.exports = {
       path: path.join(__dirname, './public'),
       filename: 'bundle.js'
    },
-   devServer: {
-      inline: true,
-      port: 8001
+   devServer: { inline: true, port: 8001 },
+   resolve: {
+      extensions:['.js','.jsx','.css'],
    },
    module: {
       rules: [
@@ -20,10 +20,7 @@ module.exports = {
          },
          {
             test: /\.css$/,
-            use: [
-               // css-loader
-               { loader: 'css-loader'}
-            ]
+            use: ["style-loader","css-loader"]
          }
       ]
    },
