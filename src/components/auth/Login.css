@@ -5,48 +5,49 @@
   padding: 10px;
   align-items: center;
   justify-content: center;
-  background: linear-gradient(
-    -135deg, rgb(200, 80, 192), rgb(65, 88, 208)
-  )
+  background: linear-gradient(-135deg, rgb(200, 80, 192), rgb(65, 88, 208));
 }
 
 .login section {
-  width: 100%; 
+  width: 100%;
   display: flex;
   padding: 18px;
   min-height: 645px;
   flex-direction: row;
   border-radius: 8px;
-  align-items: center; 
+  align-items: center;
   background: white;
   justify-content: center;
 }
 
-.login section > div { display: none; text-align: center;}
+.login section > div {
+  display: none;
+  text-align: center;
+}
 .login section > div img {
   width: 250px;
   height: 250px;
 }
 
 .login section form {
-    width: 100%;
-    display: flex;
-    align-items: center;
-    flex-direction: column;
+  width: 100%;
+  display: flex;
+  align-items: center;
+  flex-direction: column;
 }
 
-.login section form hgroup { 
-  margin-bottom: 30px; 
+.login section form hgroup {
+  margin-bottom: 30px;
   text-align: center;
 }
 
-.login section form .input-wrap { 
-  margin: 8px 0; 
-  width: 100%; 
+.login section form .input-wrap {
+  margin: 8px 0;
+  width: 100%;
   text-align: center;
 }
 
-.login section form input { 
+.login section form input {
   padding: 10px 40px;
   font-weight: 550;
   font-size: 15px;
@@ -70,16 +71,16 @@
   outline: none;
   border-radius: 25px;
   color: rgb(231, 231, 231);
-  transition: all .4s ease 0s;
+  transition: all 0.4s ease 0s;
   background: rgb(87, 184, 70);
 }
 
-.login section form button:hover { 
-  cursor: pointer; 
+.login section form button:hover {
+  cursor: pointer;
   background: rgb(51, 51, 51);
 }
 
-.login p{
+.login p {
   font-size: 12px;
   margin: 12px 0;
   color: rgb(138, 138, 138);
@@ -87,7 +88,7 @@
 
 .cta span {
   color: rgb(44, 44, 44);
-  transition: all .4s ease 0s;
+  transition: all 0.4s ease 0s;
 }
 
 .create-account {
@@ -100,18 +101,23 @@
   cursor: pointer;
 }
 
-
 @media (min-width: 768px) {
   .login section {
     width: 870px;
   }
 
-  .login section > div { 
-    display: block; 
-    flex: 1 .8;
+  .login section > div {
+    display: block;
+    flex: 1 0.8;
   }
 
-  .login section form { flex: 1 .3; }
-  .login section form input {  width: 280px; }
-  .login section form button { width: 280px; }
+  .login section form {
+    flex: 1 0.3;
+  }
+  .login section form input {
+    width: 280px;
+  }
+  .login section form button {
+    width: 280px;
+  }
 }
