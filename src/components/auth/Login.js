@@ -12,6 +12,15 @@ export default class Login extends React.Component {
         }
 
         this.handleChange = this.handleChange.bind(this);
+        this.handleSubmit = this.handleSubmit.bind(this);
+    }
+
+    handleSubmit(event){
+        event.preventDefault();
+        console.log(this.state.username);
+        console.log(this.state.password);
+
+        this.setState({username: '', password: ''});
     }
 
     handleChange(event){
@@ -25,18 +34,18 @@ export default class Login extends React.Component {
                     <div>
                         <img src={brandImg} alt={'brand image'} />
                     </div>
-                    <form>
+                    <form onSubmit={this.handleSubmit}>
                         <hgroup>
                             <h3>Welcome to MCare</h3>
                             <h4>Please log in</h4>
                         </hgroup>
                         <div className={'input-wrap'}>
                             {/* TODO: fontawesome email icon */}
-                            <input type="text" placeholder="Email or Username" />
+                            <input type="text" name={"username"} value={this.state.username} placeholder="Email or Username" onChange={this.handleChange} />
                         </div>
                         <div className={'input-wrap'}>
                             {/* TODO: fontawesome lock icon */}
-                            <input type="password" placeholder="Password" />
+                            <input type="password" name={'password'} value={this.state.password} placeholder="Password" onChange={this.handleChange} />
                             {/* TODO: fontawesome eye icon */}
                         </div>
 
