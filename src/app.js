@@ -1,13 +1,18 @@
-import React, { Component } from 'react';
+import React from 'react';
 
+class App extends React.Component {
+  constructor(props) {
+    super(props);
+    this.render = this.render.bind(this);
+  }
 
-class App extends Component{
-   render(){
-      return(
-         <div>
-            <h1>Hello World</h1>
-         </div>
-      );
-   }
+  render() {
+    return (
+      <div>
+        <h1>Hello World</h1>
+      </div>
+    );
+  }
 }
+
 export default App;

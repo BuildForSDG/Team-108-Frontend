@@ -1,34 +1,31 @@
 import React from 'react';
 
-import brandImg from '../../assets/brandImg.png'
+import brandImg from '../../assets/brandImg.png';
 import './Login.css';
 
 export default class Login extends React.Component {
-    constructor(props){
-        super(props);
-        this.state = {
-            username: '',
-            password: '',
-        }
+  constructor(props) {
+    super(props);
+    this.state = {
+      username: '',
+      password: ''
+    };
 
-        this.handleChange = this.handleChange.bind(this);
-        this.handleSubmit = this.handleSubmit.bind(this);
-    }
+    this.handleChange = this.handleChange.bind(this);
+    this.handleSubmit = this.handleSubmit.bind(this);
+  }
 
-    handleSubmit(event){
-        event.preventDefault();
-        console.log(this.state.username);
-        console.log(this.state.password);
+  handleSubmit(event) {
+    event.preventDefault();
+    this.setState({ username: '', password: '' });
+  }
 
-        this.setState({username: '', password: ''});
-    }
+  handleChange(event) {
+    this.setState({ [event.target.name]: event.target.value });
+  }
 
-    handleChange(event){
-        this.setState({[event.target.name]: event.target.value});
-    }
-
-    render() {
-        return (
+  render() {
+    return (
             <div className={'login'}>
                 <section>
                     <div>
@@ -41,7 +38,7 @@ export default class Login extends React.Component {
                         </hgroup>
                         <div className={'input-wrap'}>
                             {/* TODO: fontawesome email icon */}
-                            <input type="text" name={"username"} value={this.state.username} placeholder="Email or Username" onChange={this.handleChange} />
+                            <input type="text" name={'username'} value={this.state.username} placeholder="Email or Username" onChange={this.handleChange} />
                         </div>
                         <div className={'input-wrap'}>
                             {/* TODO: fontawesome lock icon */}
@@ -50,7 +47,7 @@ export default class Login extends React.Component {
                         </div>
 
                         <button>LOGIN</button>
-                        
+
                         <p className={'cta forgot-pass'}>
                             Forgot <span>Email/Username or Password ?</span>
                         </p>
@@ -62,6 +59,6 @@ export default class Login extends React.Component {
                     </form>
                 </section>
             </div>
-        )
-    }
+    );
+  }
 }
