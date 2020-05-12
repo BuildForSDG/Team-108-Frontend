@@ -20,6 +20,7 @@ module.exports = {
   parser: 'babel-eslint',
   rules: {
     'class-methods-use-this': ["off",],
+    "import/extensions": ['off'],
     'comma-dangle': ['error', 'never'],
     'no-param-reassign': ['error', { props: false }]
   }
