@@ -22,7 +22,11 @@
   justify-content: center;
 }
 
-.login section > div { display: none; }
+.login section > div { display: none; text-align: center;}
+.login section > div img {
+  width: 250px;
+  height: 250px;
+}
 
 .login section form {
     width: 100%;

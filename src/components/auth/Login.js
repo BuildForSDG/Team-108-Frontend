@@ -1,4 +1,6 @@
 import React from 'react';
+
+import brandImg from '../../assets/brandImg.png'
 import './Login.css';
 
 export default class Login extends React.Component {
@@ -20,7 +22,9 @@ export default class Login extends React.Component {
         return (
             <div className={'login'}>
                 <section>
-                    <div></div>
+                    <div>
+                        <img src={brandImg} alt={'brand image'} />
+                    </div>
                     <form>
                         <hgroup>
                             <h3>Welcome to MCare</h3>
