@@ -1,7 +1,7 @@
 ---
-name: "[FEATURE] As a [type of user] I want [my goal] so that [my reason]"
+name: "features-concise-request"
 about: A more concise description of a feature request
-title: "[FEATURE]"
+title: "[FEATURE] As a [type of user] I want [my goal] so that [my reason]"
 labels: ''
 assignees: ''
 
