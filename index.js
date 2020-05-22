@@ -1,7 +1,19 @@
 import React from 'react';
 import ReactDOM from 'react-dom';
+import { library } from '@fortawesome/fontawesome-svg-core';
+import { 
+  faHome, 
+  faUsers,  
+  faUser, 
+  faSearch, 
+  faArrowDown, 
+  faCog,
+  faCommentAlt,
+} from '@fortawesome/free-solid-svg-icons';
 
 import './index.css';
-import Login from './src/components/auth/Login.js';
+import Dashboard from './src/components/dashboard/Dashboard';
 
-ReactDOM.render(<Login />, document.getElementById('app'));
+
+library.add(faHome, faUsers, faUser, faSearch, faArrowDown, faCog, faCommentAlt);
+ReactDOM.render(<Dashboard />, document.getElementById('app'));
