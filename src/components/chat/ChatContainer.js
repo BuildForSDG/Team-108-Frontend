@@ -4,11 +4,11 @@ import './Chat.css';
 import ChatWall from './ChatWall';
 import ChatList from './ChatList';
 import SearchInput from '../search/SearchInput';
-import {DashboardTopHeader} from '../dashboard/Dashboard';
+import DashboardTopHeader from '../dashboard/DashboardHeader';
 
 
 class ChatContainer extends React.Component {
-  render(){
+  render() {
     return (
       <section className={'messages-container'}>
         <div>
@@ -22,7 +22,7 @@ class ChatContainer extends React.Component {
           <ChatWall />
         </div>
       </section>
-    )
+    );
   }
 }
 
