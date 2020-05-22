@@ -1,0 +1,47 @@
+.messages-container {
+  display: grid;
+  grid-template-columns: 280px 1fr;
+}
+
+.messages-container > div:nth-child(1) { padding-top: 18px; }
+
+.chat-messages {
+  height: 100vh;
+  padding: 4px;
+  margin-left: 5px;
+  background: #ffffff;
+}
+
+/* chatlist component style */
+
+.chatlist-wrap {
+  max-height: 80vh;
+  overflow-y: scroll;
+}
+
+.chatlist {
+  gap: 5px;
+  display: grid;
+  padding: 22px 0;
+  justify-content: space-evenly;
+  border-top: 1px solid #dcdcdcdc;
+  border-bottom: 1px solid #dcdcdcdc;
+  grid-template-columns: 50px 1fr 50px;
+}
+
+.sender-image--chatlist { 
+  min-width: 50px;
+  height: 50px;
+  border-radius: 50px;
+  background: #dcdcdcdc;
+}
+
+.chatlist small {font-size: 12px;}
+
+/* chatwall component style */
+
+.chatwall {
+  height: 100%;
+  overflow-y: scroll;
+  background: #ffffff;
+}
