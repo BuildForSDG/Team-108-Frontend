@@ -9,7 +9,7 @@ import {
 
 import './Dashboard.css';
 import ChatContainer from '../chat/ChatContainer';
-import PatientListContainer from '../patients/PatientListContainer';
+import PatientListContainer from '../patient/PatientListContainer';
 
 // This component will also hold a user profile avatar
 const DashboardTopHeader = ({headerText}) =>  <h1>{headerText}</h1>
