@@ -44,6 +44,7 @@
     "eslint-config-airbnb": "18.1.0",
     "file-loader": "6.0.0",
     "html-webpack-plugin": "4.3.0",
+    "prop-types": "^15.7.2",
     "react": "16.13.1",
     "react-dom": "16.13.1",
     "react-fontawesome": "^1.7.1",

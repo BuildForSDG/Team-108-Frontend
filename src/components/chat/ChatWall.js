@@ -2,11 +2,9 @@ import React from 'react';
 
 import './Chat.css';
 
-const ChatWall = () => {
-  return (
+const ChatWall = () => (
     <div className={'chatwall'}></div>
-  )
-}
+);
 
 
 export default ChatWall;

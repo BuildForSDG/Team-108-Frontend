@@ -1,18 +1,15 @@
 import React from 'react';
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
 import {
-  BrowserRouter as Router, 
-  NavLink, 
-  Switch, 
-  Route,
+  BrowserRouter as Router,
+  NavLink,
+  Switch,
+  Route
 } from 'react-router-dom';
 
 import './Dashboard.css';
 import ChatContainer from '../chat/ChatContainer';
 import PatientListContainer from '../patient/PatientListContainer';
-
-// This component will also hold a user profile avatar
-const DashboardTopHeader = ({headerText}) =>  <h1>{headerText}</h1>
 
 
 export default class Dashboard extends React.Component {
@@ -51,7 +48,7 @@ export default class Dashboard extends React.Component {
           </nav>
 
 
-          <div className={'dashboard--content'}>            
+          <div className={'dashboard--content'}>
             <Switch>
               <Route path={'/chat'} component={ChatContainer} />
               <Route path={'/patients'} component={PatientListContainer} />
@@ -59,9 +56,6 @@ export default class Dashboard extends React.Component {
           </div>
         </section>
       </Router>
-    )
+    );
   }
 }
-
-
-export {DashboardTopHeader};
