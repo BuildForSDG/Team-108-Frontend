@@ -19,7 +19,8 @@ module.exports = {
   },
   parser: 'babel-eslint',
   rules: {
-    'class-methods-use-this': ["off",],
+    'class-methods-use-this': ['off'],
+    "react/no-unescaped-entities": ['off'],
     "import/extensions": ['off'],
     'comma-dangle': ['error', 'never'],
     'no-param-reassign': ['error', { props: false }]
