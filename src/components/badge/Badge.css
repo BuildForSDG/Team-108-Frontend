@@ -1,0 +1,19 @@
+.badge-wrap {
+  display: flex;
+  align-items: center;
+  min-width: 55px;
+  justify-content: space-between;
+}
+
+.badge-wrap { font-size: 16px; }
+
+.badge-circle {
+  height: auto;
+  padding: 2px;
+  min-width: 30px;
+  text-align: center;
+  border-radius: 50px;
+  background: #dcdcdc;
+}
+
+
